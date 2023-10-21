@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <ion-row>
+    <ion-col>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" 
+      alt="" height="100">
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col sizeMd="4" offsetMd="4">
+      <ion-card>
+        <ion-card-content>
+          <ion-item lines="full">
+            <!--<ion-label position="floating">Ingrese nombre de usuario</ion-label>-->
+            <ion-input label="Ingrese usuario:" type="text" [(ngModel)]="usuario"></ion-input>
+          </ion-item>          
+          <ion-row>
+            <ion-col>
+              <!--<ion-button expand="full" (click)="recuperarPassword()">Recuperar contraseña</ion-button>-->
+              <button mat-button color="warn" (click)="recuperarPassword()">Recuperar</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
