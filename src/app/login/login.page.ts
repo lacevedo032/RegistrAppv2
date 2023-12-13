@@ -37,9 +37,6 @@ export class LoginPage implements OnInit {
   this.Autentica.login();
 
   }
-  registarAsistencia(){
-    this.router.navigate(['/registar-asistencia'])
-  }
 
 
 
